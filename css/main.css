@@ -544,7 +544,7 @@ margin: 30px 19px 0 0;
     text-transform: uppercase;
 }
 .footer_container p {
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-Light';
     font-size: 14px;
     line-height: 26px;
     color: #c8c8c9;
@@ -596,4 +596,9 @@ margin: 30px 19px 0 0;
 .footer_container li:hover::before {
     width: 100%;
     transition: .3s;
+}
+.footer_container .search_arrow {
+    position: relative;
+    width: 10px;
+    transform: translateX(-200%) translateY(25%) rotate(-90deg);
 }

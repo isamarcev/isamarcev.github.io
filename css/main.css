@@ -76,6 +76,7 @@
     height: 100%;
     background-image: url("../img/intro/intro_bg.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
 }

@@ -1,0 +1,26 @@
+// RESET
+@import "libs/reset";
+
+// PARTIALS FOLDER
+@import "partials/variable";
+@import "partials/mixins";
+@import "partials/keyframes";
+@import "partials/media";
+
+
+// FONTS
+@import "fonts/fonts";
+// PAGES
+@import "pages/home";
+
+// COMPONENTS
+@import "components/header";
+@import "components/intro";
+@import "components/about_us";
+@import "components/latest_project";
+@import "components/our_team";
+
+// @import "components/map";
+
+
+

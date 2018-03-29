@@ -1,0 +1,47 @@
+.our_team {
+    @include flex(column,flex-start,center,nowrap);
+    width: 100%;
+    padding: 0 150px;
+    img {
+        padding-top: 140px;
+    }
+    h2 {
+        padding-top: 40px;
+    }
+}
+.people {
+    padding-top: 120px;
+    img {
+        padding: 0;
+    }
+    @include flex(row,space-between,flex-start,wrap);
+    .people_team {
+        max-height: 668px;
+        @include flex(column,flex-start,flex-start,nowrap);
+        margin-bottom: 65px;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+    }  
+    .link img{
+        padding-right: 20px;
+    }
+    h4 {
+        padding-top: 50px;
+        @include font(15px,bold,25px,#2c2e37);
+        font-family: "Raleway-ExtraBold";
+    }
+    h5 {
+        @include font(15px,bold,30px,#2c2e37);
+        font-family: "Raleway-Medium";
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    p {
+        @include font(14px, bold,26px,#949494);
+        font-family: "OpenSans-Light";
+        max-width: 300px;
+        padding: 30px 0 40px 0;
+    }
+}
+ 

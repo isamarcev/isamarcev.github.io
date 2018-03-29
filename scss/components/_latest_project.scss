@@ -1,0 +1,191 @@
+.latest_project {
+    position: relative;
+    top:0;
+    height: auto;
+    @include flex(column, flex-start, center, nowrap);
+}
+.latest_project:before{
+    content: '';
+    width: 2px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    top: 0;
+    background-color: #dfdfdf;
+    z-index: 2;
+}
+.latest_project:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: #2c2e37;
+    width: 100%;
+    min-height: 600px;
+    z-index: -1;
+}
+.latest_project__desc {
+    width: 100%;
+    position: relative;
+    padding: 0 150px;
+    @include flex(column, space-between, center, nowrap);
+     h2 {
+         color: #fff;
+         text-align: center;
+         width: 100%;
+         padding-top: 125px;
+    }
+    p {
+        width: 60%;
+        text-align: center;
+        @include font(14px, 500, 26px, #acabab);
+        font-family: 'OpenSans-Light';
+    }
+    .about_btn {
+        padding-top: 25px;
+    }
+    .about_btn a:nth-child(2){
+        border: 2px solid #56585f;
+        color: #fff;
+    }
+    
+}
+.latest_project__about {
+    @include flex(column, flex-start, center, nowrap);
+}
+.project_img {
+    min-height:600px;
+    padding-top: 100px;
+    z-index: 2;
+    margin: 0  auto;
+   width: 100%;
+    @include flex (row, space-between,center,nowrap);
+    a:nth-child(1) {
+        position: absolute;
+        left: 75px;
+    }
+    a:nth-child(4) {
+        position: absolute;
+        right: 75px;
+        transform: rotate(180deg);
+    }
+    img:nth-child(2) {
+        padding: 0 20px 0 25px;
+        width: 600px;
+    }
+    img:nth-child(3) {
+        padding:0 25px 0 20px;
+        width: 450px;
+    }
+}
+.case_s {
+    @include flex(row,space-between,center,nowrap);   
+    .case_text {
+        width: 50%;
+        padding-top: 55px;
+            .text_head__second {
+                padding: 0 0 0 28px;
+            }
+            p {
+                width: 90%;
+                padding: 28px 0 0 28px;
+                font-family: 'OpenSans-Light';
+                @include font(14px, 500, 26px, #acabab);
+            }
+        }
+    .time {
+        position: relative;
+        top: 0;
+        padding: 45px 0 0 28px;
+       @include flex(row,flex-start ,center ,nowrap);
+        .clock {
+             width: 15px;
+             height: 15px;
+        }
+      p {
+        @include font(14px, 300, 26px, #acabab);
+        font-family: 'OpenSans-Italic';
+        padding: 0 0 0 5px;}
+}
+.slider {
+    @include flex(row,flex-end,center,nowrap);
+    width: 50%;
+    .line_big {
+        width: 403px;
+        height: 1px;
+        margin-right: 20px;
+        background-color: #acabab;
+    }
+    .number {
+        position: relative;
+        top: 0;
+        width: 93px;
+        padding-right: 25px;
+        @include flex(row,space-between,center,nowrap);
+        a {
+            position: relative;
+            top: 0;
+            padding: 0 1px;
+            @include font(14px, bold, 26px, #acabab);
+            font-family: "Raleway-Bold";
+            // margin: 0 auto;
+            transition: .5s;
+        }
+        a:hover {
+            padding: 0;
+            cursor: pointer;
+            transition: .5s;
+            @include font(16px, bold, 26px, #828286);
+        }
+        }
+}
+}
+.our_jour {
+    margin-top: 205px;
+    background-color: #fafafa;
+    max-height: 680px;
+    position: relative;
+    top: 0;
+    @include flex(row, flex-start,flex-start,nowrap);
+}
+.our_jour__desc {
+    padding: 200px 0 170px 0;
+    width: 50%;
+    height: 20%;
+    @include flex(column, flex-start,flex-start,nowrap);
+    p {
+        width: 50%;
+        @include font(14px, 500, 26px, #acabab);
+        font-family: 'OpenSans-Light';
+        padding:0 ;
+    }
+    .text_head__second {
+        align-self: flex-start;
+        width: 50%;
+        padding-top: 43px;
+    }
+    .about_btn {
+    padding-top: 35px;
+    }
+}
+.our_jour__img {
+    position: relative;
+    width: 50%;
+    top: 0;
+    @include flex(row, space-between,flex-start,nowrap);
+    img:nth-child(1) {
+        width: 805px;
+        height: 633px;
+        position: absolute;
+        right: -150px;
+        top: -86px;
+    }
+    img:nth-child(2) {
+        width: 350px;
+        height: 350px;
+        z-index: 5;
+        position: absolute;
+        right: calc( 655px - 260px);
+        top: 287px;
+    }
+}

@@ -1,0 +1,36 @@
+.intro_s {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    @include flex(column, center, center, nowrap);
+    background-image: url(../img/intro/intro_bg.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    .btn {
+        font-family: 'Raleway-ExtraBold';
+        text-transform: uppercase;
+        text-align: center;
+        width: 188px;
+        height: 35px;
+        background-color: #f84444;
+        a {
+            @include font(17px, bold, 35px, #ffffff);
+        }
+    }
+    h1 {
+        width: 760px;
+        height: 28px;
+        @include font(35px, Bold, 50px, #fff);
+        font-family: 'Raleway-Bold';
+        text-transform: uppercase;
+        letter-spacing: 73px;
+    }
+}
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    animation: arrow .5s infinite alternate;
+}

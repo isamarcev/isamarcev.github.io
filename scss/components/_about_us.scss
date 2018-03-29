@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 150px;
+}
+.text_head__second {
+    @include font(20px, bold, 0px, #2c2e37);
+    font-family: 'Raleway-ExtraBold';
+    padding-bottom: 28px;
+    text-transform: uppercase;
+}
+.about_us {
+    height: auto;
+    padding: 140px 150px 170px 150px;
+    @include flex(column, flex-start, center, nowrap);
+    .wave {
+        width: 83px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .about_us__desc {
+        p {
+            width: 90%;
+            @include font(14px, 300, 26px, #acabab);
+            font-family: 'OpenSans-Light';
+        }   
+        img {
+            width: 50%;
+        } 
+}
+.about_us__desc .we_are:nth-of-type(1){
+    padding: 120px 0px 0 0px;
+    @include flex(row, space-between, center, nowrap);
+    p {
+        padding-left: 70px;
+    }
+    h3 {
+        padding-left: 70px;
+    }
+}
+.about_us__desc .we_are:nth-of-type(2){
+    padding: 50px 0 0 0;
+    @include flex(row, space-between, center, nowrap);
+    p {
+        padding: 0 60px 0 70px;
+    }
+    h3 {
+        padding-left: 70px;
+    }
+}
+}
+.text_head {
+    position: relative;
+    align-self: center;
+    width: 30%;
+    text-align: center;
+        @include font(23px, none, 33px, #2c2e37);
+        font-family: 'Raleway-ExtraBold';
+        text-transform: uppercase;
+}
+.text_about {
+    padding-top: 165px;
+    @include flex(row, space-between,none,nowrap);
+    p:nth-child(1) {
+            padding-left: 85px;
+        @include font(14px, none, 26px, #acabab);
+        font-family: 'OpenSans-Light';
+    }
+    p:nth-child(2) {
+            padding: 0 70px 0 25px;
+        @include font(14px, none, 26px, #acabab);
+        font-family: 'OpenSans-Light';
+    }
+}
+.about_btn {
+    width: 281px;
+    padding-top: 80px;
+    @include flex(row, space-between,center,nowrap);
+    a {
+        width: 130px;
+        font-family: 'Raleway-ExtraBold';
+        text-transform: uppercase;
+        height: 40px;
+        text-align: center;
+    }    
+    a:nth-of-type(1){
+        background-color: #f84444;
+        border: 1px solid #f84444;
+        @include font(12px, bold, 40px, #ffffff);
+    }
+    a:nth-of-type(2){
+        background-color: transparent;
+        @include font(12px, bold, 40px, #818181);
+        border: 2px solid #e6e6e6;
+    }
+}

@@ -1,0 +1,24 @@
+@keyframes logo {
+   from{
+       transform: rotate(0deg);
+   }
+   to{
+    transform: rotate(360deg); 
+   }
+}
+@keyframes header_container {
+       from {
+           transform: translateY(-100%);
+       }
+       to {
+        transform: translateY(0);
+       }
+}
+@keyframes arrow {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50%);
+    }
+}

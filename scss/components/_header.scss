@@ -1,0 +1,41 @@
+body {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+.header_container {
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    z-index: 999;
+    animation: header_container .6s .5s linear backwards;
+    @include flex(row, space-between, flex-end, nowrap);
+}
+.logo {
+    width: 17px;
+    height: 17px;
+    animation: logo 2s linear infinite;
+}
+.nav {
+    @include flex(row, space-between,center, nowrap);
+    width: 57px;
+}
+.hamburger {
+    @include flex(column, space-between, center, nowrap);
+    width: 15px;
+    height: 12px;
+    .line1 , .line2 , .line3 {
+        width: 15px;
+        height: 2px;
+        background-color: #7c7e88;
+        transition: .5s;
+    }
+}
+.hamburger:hover div{
+    background-color: red;
+    transition: .5s;
+}

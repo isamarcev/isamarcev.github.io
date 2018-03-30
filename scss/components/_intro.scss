@@ -6,18 +6,54 @@
     top: 0;
     @include flex(column, center, center, nowrap);
     background-image: url(../img/intro/intro_bg.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+
     .btn {
-        font-family: 'Raleway-ExtraBold';
-        text-transform: uppercase;
+        position: relative;
+        top: 0;
         text-align: center;
         width: 188px;
         height: 35px;
+        overflow: hidden;
+        
+    }
+    .btn:before {
+        content: 'inside our studio';
+        font-family: 'Raleway-ExtraBold';
+        position: absolute;
+        top:-100%;
+        right: 0;
+        width: 188px;
+        height: 35px;
+        background-color: #ff5d5d;
+        text-align: center;
+        text-transform: uppercase;
+        @include font(17px, bold, 35px, #f3f2f2);
+        transition: .5s;
+    }
+    .btn:hover::before {
+        transform: translateY(100%);
+        transition: .5s;
+    }
+    .btn:after {
+        content: 'inside our studio';
+        font-family: 'Raleway-ExtraBold';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 188px;
+        height: 35px;
         background-color: #f84444;
-        a {
-            @include font(17px, bold, 35px, #ffffff);
-        }
+        text-align: center;
+        text-transform: uppercase;
+        @include font(17px, bold, 35px, #f3f2f2);
+        transition: .5s;
+    }
+    .btn:hover::after {
+        transform: translateY(100%);
+        transition: .5s;
     }
     h1 {
         width: 760px;
@@ -33,4 +69,10 @@
     bottom: 50px;
     left: 50%;
     animation: arrow .5s infinite alternate;
+}
+.top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    
 }

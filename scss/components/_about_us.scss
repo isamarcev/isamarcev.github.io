@@ -95,3 +95,38 @@
         border: 2px solid #e6e6e6;
     }
 }
+@media (max-width: 1024px) {
+    .about_us {
+        padding: 79px 0 150px 0;
+    }
+    .text_head {
+        align-self: center;
+        width: 35%;
+            @include font(26px, none, 33px, #2c2e37);
+    }
+    .about_us {
+    .about_us__desc .we_are:nth-of-type(1){
+        padding: 120px 0px 0 0px;
+        p {
+            padding-left: 100px;
+        }
+        h3 {
+            padding-left: 100px;
+        }
+    }
+    .about_us__desc .we_are:nth-of-type(2){
+        p {
+            padding-right:99px;
+        }
+    }
+    }
+    .text_about {
+        padding-top: 120px;
+        p:nth-child(1) {
+            padding-left: 100px;
+        }
+        p:nth-child(2) {
+                padding-right: 99px;
+        }
+    }
+}

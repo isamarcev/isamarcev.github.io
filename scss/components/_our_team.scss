@@ -63,5 +63,25 @@
             transition: .5s;
         }
 }
-
+@media (max-width: 1024px) {
+    .our_team {
+        padding: 0 145px;
+        img {
+            padding-top: 79px;
+        }
+        h2 {
+            padding-top: 40px;
+        }
+    }
+    .people {
+        img {
+            padding: 0;
+        }
+}}
+@media (max-width:1024px) {
+    .our_sponcor {
+        margin-bottom: 0px;
+        
+}
+}
  

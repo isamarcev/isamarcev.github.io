@@ -189,3 +189,99 @@
         top: 287px;
     }
 }
+@media (max-width: 1024px) {
+    .latest_project__desc {
+        padding: 0;
+    p {
+        width: 70%;
+    }
+    }
+    .project_img {
+        justify-content: flex-start;
+        padding-left: 212px;
+        padding-right: 0;
+        a:nth-child(1) {
+            display: none;
+        }
+        a:nth-child(4) {
+            display: none;
+        }
+        img:nth-child(2) {
+            padding: 0 10px 0 0;
+            // width: 600px;
+        }
+        img:nth-child(3) {
+            padding:0 0 0 10px;
+            width: 200px;
+            height: 450px;
+        }
+    }
+    .case_s {
+        padding-left: 0;
+    @include flex(row-reverse,flex-start,flex-start,nowrap);   
+    .slider {
+        @include flex(row,flex-start,center,nowrap);
+        padding-top: 70px;
+        // width: 50%;
+        .line_big {
+            width: 179px;
+            height: 1px;
+            margin-right: 20px;
+            background-color: #acabab;
+        }
+        .number {
+            position: relative;
+            top: 0;
+            width: 93px;
+            padding-right: 25px;
+            @include flex(row,space-between,center,nowrap);
+            a {
+                position: relative;
+                top: 0;
+                padding: 0 1px;
+                @include font(14px, bold, 26px, #acabab);
+                font-family: "Raleway-Bold";
+                // margin: 0 auto;
+                transition: .5s;
+            }
+            a:hover {
+                padding: 0;
+                cursor: pointer;
+                transition: .5s;
+                @include font(16px, bold, 26px, #828286);
+            }
+            }
+    }
+    }
+}
+    .case_s .case_text {
+        width: 100%;
+        padding: 80px 0 0 0;
+    }
+    .our_jour {
+        margin-top: 160px;
+        padding-left: 100px;
+        overflow: hidden;
+    }
+    .our_jour__desc {
+        padding-top: 160px;
+        min-height: 680px;
+        p {
+            width: 80%;
+        }
+    }
+    .our_jour__img {
+        img:nth-child(1) {
+            right: -503px;
+            top: -86px;
+        }
+        img:nth-child(2) {
+            width: 350px;
+            height: 350px;
+            z-index: 5;
+            position: absolute;
+            right: 60px;
+            top: 287px;
+        }
+    }
+    

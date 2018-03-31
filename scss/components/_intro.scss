@@ -7,9 +7,33 @@
     @include flex(column, center, center, nowrap);
     background-image: url(../img/intro/intro_bg.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+    
+    h1 {
+        width: 760px;
+        height: 28px;
+        @include font(35px, Bold, 50px, #fff);
+        font-family: 'Raleway-Bold';
+        text-transform: uppercase;
+        letter-spacing: 73px;
+    }
+}
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    animation: arrow .5s infinite alternate;
+}
+.top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    
+}
+@media (min-width: 1025px) {
     .btn {
         position: relative;
         top: 0;
@@ -55,24 +79,31 @@
         transform: translateY(100%);
         transition: .5s;
     }
-    h1 {
-        width: 760px;
-        height: 28px;
-        @include font(35px, Bold, 50px, #fff);
-        font-family: 'Raleway-Bold';
-        text-transform: uppercase;
-        letter-spacing: 73px;
+    .arrow {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        animation: arrow .5s infinite alternate;
     }
 }
-.arrow {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    animation: arrow .5s infinite alternate;
-}
-.top {
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-    
+@media (max-width:1024px) {
+    .intro_s .btn {
+        position: relative;
+        top: 0;
+        text-transform: uppercase;
+        text-align: center;
+        width: 282px;
+        height: 52px;
+        background-color: #f84444;
+        font-family: 'Raleway-ExtraBold';
+        @include font(24px, bold, 52px, #f3f2f2);
+        
+    }
+    .arrow {
+        animation: none;
+    }
+    h1 {
+        display:none;
+    }
+
 }

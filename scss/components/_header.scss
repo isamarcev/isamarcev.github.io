@@ -39,3 +39,40 @@ body {
     background-color: red;
     transition: .5s;
 }
+@media only screen and (min-width: 1025px) {
+    .hamburger:hover div{
+        background-color: red;
+        transition: .5s;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header_container {
+        max-width: 1024px;
+        height: 60px;
+        margin: 0 auto;
+        animation: none;
+    }
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+    .logo {
+        animation: none;
+    }
+    .hamburger {
+        width: 23px;
+        height: 17px;
+        .line1 , .line2 , .line3 {
+            width: 23px;
+            height: 3px;
+        }
+    }
+    .hamburger:hover div{
+        background-color: #7c7e88;
+        transition: 0;
+    }
+    .search {
+        width: 21px;
+        height: 20px;
+    }
+}

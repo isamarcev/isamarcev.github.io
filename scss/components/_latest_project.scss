@@ -198,8 +198,9 @@
     }
     .project_img {
         justify-content: flex-start;
-        padding-left: 212px;
+        padding-left: 204px;
         padding-right: 0;
+        overflow: hidden;
         a:nth-child(1) {
             display: none;
         }

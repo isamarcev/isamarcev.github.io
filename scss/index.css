@@ -934,8 +934,9 @@ body {
       width: 70%; }
   .project_img {
     justify-content: flex-start;
-    padding-left: 212px;
-    padding-right: 0; }
+    padding-left: 204px;
+    padding-right: 0;
+    overflow: hidden; }
     .project_img a:nth-child(1) {
       display: none; }
     .project_img a:nth-child(4) {

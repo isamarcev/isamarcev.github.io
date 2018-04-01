@@ -107,3 +107,13 @@
     }
 
 }
+@media (max-width:750px) {
+    .intro_s .btn {
+        width: 330px;
+        height: 60px;
+        @include font(24px, bold, 60px, #f3f2f2);
+        
+    }
+    .arrow {
+        display: none;    }
+}

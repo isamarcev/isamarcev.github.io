@@ -73,4 +73,52 @@
             display: none;
         }
     }
+    @media (max-width:750px) {
+        .footer {
+            padding: 87px 36px 75px 36px;
+            min-height: 270px;
+            a:first-child {
+                display: inline;
+                width: 100%;
+            }
+            ul {
+                width: 50%;
+                
+            }
+            a {
+                @include font(26px,500,80px, #fff);
+            }
+            
+        }
+        .follow {
+            margin-bottom: 270px;
+            width: 100%;
+            h5 {
+                @include font(28px,500,80px, #fff);
+            }
+            p {
+                @include font(26px,500,38px, #fff);
+            }
+            input {
+                width:678px;
+                height: 77px;
+                font-size: 24px;
+                }
+            .input {
+                img {
+                    width: 30px;
+                    position: absolute;
+                    top: 50%;
+                    right: -300px;;
+                }
+            }
+        }
+        .link_footer {
+            left: 63px;
+            bottom: 120px;
+            
+        }
+            
+    }
+    
 

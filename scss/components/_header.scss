@@ -76,3 +76,27 @@ body {
         height: 20px;
     }
 }
+@media (max-width:750px) {
+    .header_container {
+        max-width: 750px;
+        height: 75px;
+        padding: 0 37px;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .hamburger {
+        width: 30px;
+        height: 24px;
+        .line1 , .line2 , .line3 {
+            width: 30px;
+            height: 4px;
+        }
+    }
+    .search {
+        width: 30px;
+        height: 28px;
+        transform: translateX(-5px);
+    }
+}
